@@ -1,12 +1,10 @@
 import java.util.ArrayList;
-
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -61,10 +59,9 @@ public class MainFrame extends JFrame{
     void addTask(String task)
     {
         tasks.add(task);
-        // JLabel label = new JLabel(task);
+
         displayList = new JList<>(tasks.toArray(new String[0])); //lista, não a entrada
         scrollPane.setViewportView(displayList);
 
-        // add(label);
     }
 }
